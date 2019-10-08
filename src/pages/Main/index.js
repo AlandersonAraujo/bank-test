@@ -1,9 +1,10 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/Feather';
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 import Tabs from '~/components/Tabs';
-import {Container, Content, Card, CardHeader, CardContent, CardFooter, Title, Description, Annotation} from './styles';
+import logo from '~/assets/logo-visa.png';
+import {Container, Content, Card, CardHeader, CardContent, CardFooter, Title, ImageIcon, Annotation2, Annotation, Title2, CardHeaderContent} from './styles';
 
 export default function Main() {
   return (
@@ -12,15 +13,24 @@ export default function Main() {
       <Content>
         <Card>
           <CardHeader>
-            <Icon name="web" size={28} color="#FFF" />
-            <Icon name="credit-card" size={28} color="#FFF" />
+          <ImageIcon source={logo} />
+            <CardHeaderContent>
+            <Icon
+             name="wifi"
+             size={25}
+             color="#FFF"
+            />
+            </CardHeaderContent>
           </CardHeader>
           <CardContent>
-            <Title>Saldo disponível</Title>
-            <Description>R$ 7.000,00</Description>
+            <Title2>****</Title2>
+            <Title2>****</Title2>
+            <Title2>****</Title2>
+            <Title>3308</Title>
           </CardContent>
           <CardFooter>
-            <Annotation>....8745</Annotation>
+              <Annotation>ALANDERSON ARAUJO</Annotation>
+              <Annotation2>06/08</Annotation2>
           </CardFooter>
         </Card>
       </Content>

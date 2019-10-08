@@ -1,29 +1,33 @@
 import styled from 'styled-components/native';
 export const Container = styled.View`
-  height: 150px;
+  height: 120px;
   margin-top: 20px;
 
 `;
 
 export const TabsContainer = styled.ScrollView.attrs({
   horizontal: true,
-  contentContainerStyle: {padding: 10, paddingRight: 20},
+  contentContainerStyle: {padding: 15, paddingRight: 5},
   showsHorizontalScrollIndicator: false,
 })``;
 
 export const TabItem = styled.View`
-  width: 100px;
-  height: 100px;
-  border: 1px solid #8B10AE;
+  width: 45px;
+  height: 45px;
   border-radius: 15px;
   margin-left: 10px;
   padding: 10px;
   justify-content: space-between;
 `;
 
-export const TabText = styled.Text`
-  font-size: 13px;
-  color: #8B10AE;
+export const TabItem2 = styled.View`
+  width: 45px;
+  height: 45px;
+  border: 1px solid #252625;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding: 10px;
+  justify-content: space-between;
 `;
 
 export const Title = styled.Text`
@@ -32,5 +36,12 @@ export const Title = styled.Text`
   color: #000002;
   font-weight: bold;
   margin-left: 25px;
+`;
+
+export const Image = styled.Image`
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+  position: absolute;
 `;
 

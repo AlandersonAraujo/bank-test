@@ -13,7 +13,9 @@ export const Content = styled.View`
 
 export const Card = styled.View`
   flex: 1;
-  background: #8B10AE;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #252625;
   border-radius: 10px;
   margin: 0 20px;
   height: 220px;
@@ -27,17 +29,34 @@ export const CardHeader = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 10px 30px;
+`;
+
+export const CardHeaderContent = styled.View`
+  transform: rotate(90deg);
 `;
 
 export const CardContent = styled.View`
   flex: 1;
-  padding: 0 30px;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+`;
+
+export const ImageIcon = styled.Image`
+  height: 50px;
+  width: 50px;
 `;
 
 export const Title = styled.Text`
-  font-size: 12px;
+  font-size: 20px;
+  color: #FFF;
+`;
+
+export const Title2 = styled.Text`
+  margin-top: 6px;
+  font-size: 25px;
   color: #FFF;
 `;
 
@@ -47,15 +66,19 @@ export const Description = styled.Text`
 `;
 
 export const CardFooter = styled.View`
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px 38px;
   border-radius: 4px;
 `;
 
 export const Annotation = styled.Text`
   font-size: 15px;
   color: #FFF;
-  margin-left: 290px;
+`;
+
+export const Annotation2 = styled.Text`
+  font-size: 15px;
+  color: #FFF;
 `;

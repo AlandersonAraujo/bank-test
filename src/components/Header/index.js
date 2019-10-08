@@ -8,9 +8,9 @@ export default function Header() {
     <Container>
       <Top>
         <Title>Olá, Alanderson</Title>
-        <Logo source={logo} />
+        <Description>Seja bem vindo novamente!</Description>
       </Top>
-      <Description>Seja bem vindo novamente!</Description>
+      <Logo source={logo} />
     </Container>
   );
 }
